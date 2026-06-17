@@ -1,0 +1,15 @@
+# Uploaded profile images
+assets/uploads/*
+
+# Keep folder structure
+!assets/uploads/default.png
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
