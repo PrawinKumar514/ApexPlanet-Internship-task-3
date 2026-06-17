@@ -1,0 +1,135 @@
+/* Custom Styles for User Management System */
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Glassmorphism effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #2d3436, #000000);
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar .sidebar-header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar .nav-link {
+    color: #ccc;
+    padding: 12px 20px;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.sidebar .nav-link.active {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border-left: 4px solid #667eea;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px;
+    padding: 0;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* Responsive sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .sidebar .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar .nav-item {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+}
+
+/* Card hover effects */
+.glass-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* Table styles */
+.table-hover tbody tr:hover {
+    background-color: rgba(102, 126, 234, 0.1);
+}
+
+/* Button icons */
+.btn i {
+    margin-right: 5px;
+}
+
+/* Profile image rounded */
+.rounded-circle {
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 12px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
